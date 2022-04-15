@@ -190,35 +190,35 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  let array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  let tabla = arguments;
-  let multi = 0;
-  while (multi > 11){
-    return tabla * array[0];
-    array++;
+  let array = [];
+  for (let m = 0; m < 11; m++){
+    array.push(m*6);
+  }
+    return  array;
   }
 
-  //for (let i = 0; i > 11; i++){
-   // array.push(array.lenght);
-  }
-  
 
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (!isNaN(numero)){
-    return false;
-  } else if (numero.length === 3 && isNaN(numero)){
+  if (numero === Math.floor(numero) && numero < 1000 && numero > 99){
     return true;
+  } 
+    return false;
   }
-  return false;
-}
+  
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  let crec = numero
+  do{
+    crec = crec + 5;
+  }
+  while (crec < numero+40)
+  return crec;
 }
 
 
